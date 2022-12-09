@@ -1,0 +1,7 @@
+const {testController} = require("../controller/test-controller")
+
+const Route = require("express").Router()
+
+Route.route("/test").get(testController)
+
+module.exports = Route
